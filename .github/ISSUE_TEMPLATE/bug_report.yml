@@ -1,0 +1,80 @@
+name: "🐛 Bug Report"
+description: "Erstelle ein neues Ticket für einen Bug."
+title: "🐛 [BUG] - <Titel>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Bitte gib eine explizite Beschreibung deines Problems ein."
+      placeholder: "Kurze und explizite Beschreibung deines Vorfalls..."
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: "Reproduction URL"
+      description: "Bitte gib deine GitHub-URL an, um eine Reproduktion des Problems bereitzustellen."
+      placeholder: "z.B. https://github.com/BENUTZERNAME/REPO-NAME"
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction steps"
+      description: "Bitte gib eine explizite Beschreibung deines Problems ein."
+      value: |
+        1. Gehe zu '...'
+        2. Klicke auf '....'
+        3. Scrolle herunter zu '....'
+        4. Siehe Fehler
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: "Wenn zutreffend, füge Screenshots hinzu, um dein Problem zu erklären."
+      value: |
+        ![BESCHREIBUNG](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: "Bitte kopiere alle relevanten Log-Ausgaben und füge sie hier ein. Diese werden automatisch als Code formatiert, daher sind keine Backticks erforderlich."
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Browsers"
+      description: "In welchen Browsern tritt das Problem auf?"
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS"
+      description: "Welche Umgebung ist betroffen?"
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: false
