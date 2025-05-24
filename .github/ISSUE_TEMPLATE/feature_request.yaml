@@ -1,0 +1,63 @@
+name: "💡 Feature Request"
+description: "Erstelle ein neues Ticket für eine neue Feature-Anfrage"
+title: "💡 [REQUEST] - <Titel>"
+labels: [
+  "question"
+]
+body:
+  - type: input
+    id: start_date
+    attributes:
+      label: "Start Date"
+      description: "Beginn der Entwicklung"
+      placeholder: "Monat/Tag/Jahr"
+    validations:
+      required: false
+  - type: textarea
+    id: implementation_pr
+    attributes:
+      label: "Implementation PR"
+      description: "Verwendeter Pull Request"
+      placeholder: "#Pull Request ID"
+    validations:
+      required: false
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues"
+      description: "Verwandte Issues"
+      placeholder: "#Issue IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "Gib eine kurze Erklärung des Features."
+      placeholder: "Beschreibe deine Feature-Anfrage in ein paar Zeilen."
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Basic Example"
+      description: "Gib hier einige grundlegende Beispiele für dein Feature an."
+      placeholder: "Ein paar spezifische Worte zu deiner Feature-Anfrage."
+    validations:
+      required: true
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Drawbacks"
+      description: "Welche Nachteile/Auswirkungen hat deine Feature-Anfrage?"
+      placeholder: "Identifiziere die Nachteile und Auswirkungen, während du deiner Feature-Anfrage gegenüber neutral bleibst."
+    validations:
+      required: true
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Unresolved questions"
+      description: "Welche Fragen sind noch ungeklärt?"
+      placeholder: "Identifiziere alle ungeklärten Punkte."
+    validations:
+      required: false
