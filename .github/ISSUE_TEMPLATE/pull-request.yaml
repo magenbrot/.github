@@ -1,0 +1,50 @@
+name: "🚀 Pull Request"
+description: "Vorlage für einen neuen Pull Request"
+title: "🚀 [PR] - <Titel des PRs>"
+labels: [
+  "pull request",
+  "review needed"
+]
+body:
+  - type: textarea
+    id: pr-description
+    attributes:
+      label: "Beschreibung"
+      description: "Beschreibe die Änderungen in diesem Pull Request. Was wurde warum geändert?"
+      placeholder: "Eine detaillierte Zusammenfassung der Änderungen und der Motivation dahinter..."
+    validations:
+      required: true
+  - type: input
+    id: fixed-issues
+    attributes:
+      label: "Behobene Issues"
+      description: "Welche Issues werden mit diesem Pull Request geschlossen? (z.B. 'Fixes #123', 'Closes #456')"
+      placeholder: "z.B. Fixes #123, Closes #456"
+    validations:
+      required: false
+  - type: textarea
+    id: reviewer-notes
+    attributes:
+      label: "Hinweise für den Reviewer"
+      description: "Gibt es spezielle Bereiche, auf die der Reviewer besonders achten sollte? Oder Anweisungen zum Testen der Änderungen?"
+      placeholder: "z.B. Bitte besonders auf die Funktion X achten. Zum Testen bitte Y ausführen und Z überprüfen."
+    validations:
+      required: false
+  - type: dropdown
+    id: breaking-changes
+    attributes:
+      label: "Breaking Changes?"
+      description: "Führt dieser Pull Request Breaking Changes ein, die bestehende Funktionalitäten oder APIs verändern könnten?"
+      options:
+        - "Nein"
+        - "Ja"
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Weitere Informationen"
+      description: "Zusätzliche Kontextinformationen, Screenshots, GIFs, Details zu den Breaking Changes (falls 'Ja' ausgewählt) oder andere Details, die für diesen PR relevant sind."
+      placeholder: "Alle weiteren relevanten Details, z.B. wie man die Änderungen manuell testet, Erklärungen zu komplexen Teilen des Codes, Auswirkungen der Breaking Changes..."
+    validations:
+      required: false
