@@ -44,7 +44,7 @@ body:
       description: "Gib hier einige grundlegende Beispiele für dein Feature an."
       placeholder: "Ein paar spezifische Worte zu deiner Feature-Anfrage."
     validations:
-      required: true
+      required: false
   - type: textarea
     id: drawbacks
     attributes:
@@ -52,7 +52,7 @@ body:
       description: "Welche Nachteile/Auswirkungen hat deine Feature-Anfrage?"
       placeholder: "Identifiziere die Nachteile und Auswirkungen, während du deiner Feature-Anfrage gegenüber neutral bleibst."
     validations:
-      required: true
+      required: false
   - type: textarea
     id: unresolved_question
     attributes:
