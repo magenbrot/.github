@@ -20,7 +20,7 @@ body:
       description: "Bitte gib deine GitHub-URL an, um eine Reproduktion des Problems bereitzustellen."
       placeholder: "z.B. https://github.com/BENUTZERNAME/REPO-NAME"
     validations:
-      required: true
+      required: false
   - type: textarea
     id: reprod
     attributes:
