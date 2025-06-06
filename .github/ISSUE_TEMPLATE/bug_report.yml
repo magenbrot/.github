@@ -1,6 +1,6 @@
 name: "🐛 Bug Report"
 description: "Erstelle ein neues Ticket für einen Bug."
-title: "🐛 [BUG] - <Titel>"
+title: "🐛 [BUG] <Titel>"
 labels: [
   "bug"
 ]
@@ -33,7 +33,7 @@ body:
         4. Siehe Fehler
       render: bash
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshot
     attributes:
