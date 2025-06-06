@@ -1,6 +1,6 @@
 name: "🚀 Pull Request"
 description: "Vorlage für einen neuen Pull Request"
-title: "🚀 [PR] - <Titel des PRs>"
+title: "🚀 [PR] <Titel>"
 labels: [
   "pull request",
   "review needed"
