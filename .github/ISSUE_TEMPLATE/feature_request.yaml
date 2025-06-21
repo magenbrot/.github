@@ -1,6 +1,6 @@
 name: "💡 Feature Request"
 description: "Erstelle ein neues Ticket für eine neue Feature-Anfrage"
-title: "💡 [REQUEST] <Titel>"
+title: "💡 [REQUEST] "
 labels: [
   "question"
 ]
